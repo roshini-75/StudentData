@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.studentdata.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context="com.example.studentdata.RegisterFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/Registeration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Registeration"
+            android:textColor="#395364"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#373F49"
+            android:textSize="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints"
+            android:layout_below="@id/Registeration"/>
+
+        <TextView
+            android:id="@+id/nameAsterisk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@id/name"
+            android:layout_toEndOf="@id/name"/>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/nameEdit"
+            android:layout_below="@id/name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edittext_border"
+            android:drawablePadding="20dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:inputType="textNoSuggestions"
+            android:textColorHint="@color/black" />
+
+
+
+
+        <TextView
+            android:id="@+id/nameEmptyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEdit"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:text="*Required"
+            android:textColor="@color/red"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEdit"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="5dp"
+            android:gravity=""
+            android:text="Mobile Number"
+
+            android:textColor="#373F49"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/numberAsterisk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@id/Number"
+            android:layout_toEndOf="@id/Number"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/numberInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEdit"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:hint="Mobile Number"
+            app:boxBackgroundMode="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/countryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91"
+                    android:layout_marginTop="55dp"
+                    android:background="@drawable/box_background"
+                    android:textColor="#9D9696"
+                    android:textSize="17sp"
+                    android:padding="10dp"
+
+                    tools:ignore="NotSibling" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/countryCode"
+                    android:background="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/numberEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/Number"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/edittext_border"
+                    android:drawablePadding="12dp"
+                    android:inputType="phone"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_toEndOf="@id/separator"
+                    tools:ignore="NotSibling" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/numberEmptyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEdit"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="108dp"
+            android:text="*Required"
+            android:textSize="10dp"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numberEdit"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="1dp"
+            android:gravity=""
+            android:text="Address"
+
+            android:textColor="#373F49"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints,NotSibling" />
+
+        <TextView
+            android:id="@+id/addressAsterisk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@id/address"
+            android:layout_toEndOf="@id/address"/>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/addressEdit"
+            android:layout_below="@id/address"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edittext_border"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/addressEmptyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressEdit"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:text="*Required"
+            android:textSize="10dp"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressEdit"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="5dp"
+            android:gravity=""
+            android:text="State"
+
+            android:textColor="#373F49"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints,NotSibling" />
+
+        <TextView
+            android:id="@+id/stateAsterisk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@id/State"
+            android:layout_toEndOf="@id/State"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/stateInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/State"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:hint="Select"
+            app:hintTextColor="#F6F7F8"
+
+            android:layout_marginBottom="0dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/stateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/State"
+                android:layout_marginStart="0dp"
+                android:padding="12dp"
+                android:drawablePadding="20dp"
+                android:layout_marginEnd="10dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:dropDownAnchor="@id/stateEdit"
+                android:drawableRight="@drawable/drop_down"
+
+                android:background="@drawable/edittext_border"
+
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/stateEmptyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stateInputLayout"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:text="*Required"
+            android:textColor="@color/red"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zipCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stateInputLayout"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="5dp"
+            android:gravity=""
+            android:text="Zipcode"
+
+            android:textColor="#373F49"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/zipCodeAsterisk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@id/zipCode"
+            android:layout_toEndOf="@id/zipCode"/>
+
+        <EditText
+            android:id="@+id/zipCodeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/zipCode"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edittext_border"
+            android:drawablePadding="12dp"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+
+        <TextView
+            android:id="@+id/zipcodeEmptyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zipCodeEdit"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:text="*Required"
+            android:textColor="@color/red"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registerBtn"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zipCodeEdit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="45dp"
+            android:background="@drawable/custom_button_shape"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FF528EDD"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+</com.example.studentdata.CustomScrollView>

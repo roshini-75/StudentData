@@ -1,0 +1,78 @@
+<!-- item_student.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="student"
+            type="com.example.studentdata.StudentModel" />
+
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="15dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#504e52"
+                android:textSize="14dp"
+                android:text="Name : " />
+
+            <TextView
+                android:id="@+id/mobileNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#504e52"
+                android:textSize="14dp"
+                android:text="Mobile Number : " />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#504e52"
+
+                android:textSize="14dp"
+                android:text="Address : " />
+
+
+
+            <TextView
+                android:id="@+id/stateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#504e52"
+                android:textSize="14dp"
+                android:text="State : " />
+
+            <TextView
+                android:id="@+id/zipCodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#504e52"
+                android:textSize="14dp"
+                android:text="Zipcode : " />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

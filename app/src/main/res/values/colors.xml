@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#f54242</color>
+    <color name="ash">#ebebeb</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="your_custom_color_primary">#263F9D</color>
+    <color name="custom_background_color">#f1f5f7</color>
+    <color name="original_button_color">#3586EF</color>
+    <color name="light_blue_disabled">#ADCFFB</color>
+    <!-- Change this color to suit your app's theme -->
+
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item> <!-- Set the text size as desired -->
+         <!-- Set the text color as desired -->
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>
